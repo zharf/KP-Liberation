@@ -60,7 +60,10 @@ while {true} do {
 	_standard_map_pos = ctrlPosition ((findDisplay 5201) displayCtrl 251);
 	_frame_pos = ctrlPosition ((findDisplay 5201) displayCtrl 198);
 
-	private _saved_loadouts = profileNamespace getVariable "bis_fnc_saveInventory_data";
+	private _saved_loadouts = nil;
+	if (!KP_liberation_ace_arsenal) then {
+		_saved_loadouts = profileNamespace getVariable "bis_fnc_saveInventory_data";
+	};
 	private _loadouts_data = [];
 	private _counter = 0;
 	if (!isNil "_saved_loadouts") then {

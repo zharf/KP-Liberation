@@ -2,6 +2,7 @@
 
 // Check if ACE is running
 if (isClass (configfile >> "CfgPatches" >> "ace_common")) then {KP_liberation_ace = true; diag_log "[KP LIBERATION] ACE detected. Deactivating resupply and weather scripts from Liberation."} else {KP_liberation_ace = false};
+if (isClass (configfile >> "CfgPatches" >> "ace_arsenal")) then {KP_liberation_ace_arsenal = true} else {KP_liberation_ace_arsenal = false};
 
 /* Not saveable params */
 GRLIB_param_wipe_savegame_1 = ["WipeSave1",0] call bis_fnc_getParamValue;

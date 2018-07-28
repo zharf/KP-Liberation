@@ -19,11 +19,8 @@ if (KP_liberation_arsenalUsePreset) then {
 		} else {
 			{if (!(_x in blacklisted_from_arsenal)) then {_virtualWeapons pushBack _x};} forEach (_virtualCargo select 0);
 		};
-		[missionNamespace, _virtualWeapons] call BIS_fnc_addVirtualWeaponCargo;
-		KP_liberation_allowed_items append _virtualWeapons;
 	} else {
-		[missionNamespace, GRLIB_arsenal_weapons] call BIS_fnc_addVirtualWeaponCargo;
-		KP_liberation_allowed_items append GRLIB_arsenal_weapons;
+		_virtualWeapons = GRLIB_arsenal_weapons;
 	};
 
 	if ((count GRLIB_arsenal_magazines) == 0) then {
@@ -32,11 +29,8 @@ if (KP_liberation_arsenalUsePreset) then {
 		} else {
 			{if (!(_x in blacklisted_from_arsenal)) then {_virtualMagazines pushBack _x};} forEach (_virtualCargo select 1);
 		};
-		[missionNamespace, _virtualMagazines] call BIS_fnc_addVirtualMagazineCargo;
-		KP_liberation_allowed_items append _virtualMagazines;
 	} else {
-		[missionNamespace, GRLIB_arsenal_magazines] call BIS_fnc_addVirtualMagazineCargo;
-		KP_liberation_allowed_items append GRLIB_arsenal_magazines;
+		_virtualMagazines = GRLIB_arsenal_magazines;
 	};
 
 	if ((count GRLIB_arsenal_items) == 0) then {
@@ -45,11 +39,8 @@ if (KP_liberation_arsenalUsePreset) then {
 		} else {
 			{if (!(_x in blacklisted_from_arsenal)) then {_virtualItems pushBack _x};} forEach (_virtualCargo select 2);
 		};
-		[missionNamespace, _virtualItems] call BIS_fnc_addVirtualItemCargo;
-		KP_liberation_allowed_items append _virtualItems;
 	} else {
-		[missionNamespace, GRLIB_arsenal_items] call BIS_fnc_addVirtualItemCargo;
-		KP_liberation_allowed_items append GRLIB_arsenal_items;
+		_virtualItems = GRLIB_arsenal_items;
 	};
 
 	if ((count GRLIB_arsenal_backpacks) == 0) then {
@@ -58,12 +49,26 @@ if (KP_liberation_arsenalUsePreset) then {
 		} else {
 			{if (!(_x in blacklisted_from_arsenal)) then {_virtualBackpacks pushBack _x};} forEach (_virtualCargo select 3);
 		};
-		[missionNamespace, _virtualBackpacks] call BIS_fnc_addVirtualBackpackCargo;
-		KP_liberation_allowed_items append _virtualBackpacks;
 	} else {
-		[missionNamespace, GRLIB_arsenal_backpacks] call BIS_fnc_addVirtualBackpackCargo;
-		KP_liberation_allowed_items append GRLIB_arsenal_backpacks;
+		_virtualBackpacks = GRLIB_arsenal_backpacks;
 	};
+
+	if (KP_liberation_ace_arsenal) then {
+		private _items = _virtualWeapons + _virtualMagazines + _virtualItems + _virtualBackpacks;
+		if (count _items == 0) then { _items = true; };
+		[startbase, _items, false] call ace_arsenal_fnc_initBox;
+		[startbase, blacklisted_from_arsenal] call ace_arsenal_fnc_removeVirtualItems;
+	} else {
+		[missionNamespace, _virtualWeapons] call BIS_fnc_addVirtualWeaponCargo;
+		[missionNamespace, _virtualMagazines] call BIS_fnc_addVirtualMagazineCargo;
+		[missionNamespace, _virtualItems] call BIS_fnc_addVirtualItemCargo;
+		[missionNamespace, _virtualBackpacks] call BIS_fnc_addVirtualBackpackCargo;
+	};
+
+	KP_liberation_allowed_items append _virtualWeapons;
+	KP_liberation_allowed_items append _virtualMagazines;
+	KP_liberation_allowed_items append _virtualItems;
+	KP_liberation_allowed_items append _virtualBackpacks;
 
 	{
 		if ((_x find "rhs_acc") == 0) then {
@@ -78,8 +83,12 @@ if (KP_liberation_arsenalUsePreset) then {
 		KP_liberation_allowed_items append KP_liberation_allowed_items_extension;
 	};
 } else {
-	[missionNamespace, true] call BIS_fnc_addVirtualWeaponCargo;
-	[missionNamespace, true] call BIS_fnc_addVirtualMagazineCargo;
-	[missionNamespace, true] call BIS_fnc_addVirtualItemCargo;
-	[missionNamespace, true] call BIS_fnc_addVirtualBackpackCargo;
+	if (KP_liberation_ace_arsenal) then {
+		[startbase, true, false] call ace_arsenal_fnc_initBox;
+	} else {
+		[missionNamespace, true] call BIS_fnc_addVirtualWeaponCargo;
+		[missionNamespace, true] call BIS_fnc_addVirtualMagazineCargo;
+		[missionNamespace, true] call BIS_fnc_addVirtualItemCargo;
+		[missionNamespace, true] call BIS_fnc_addVirtualBackpackCargo;
+	};
 };
