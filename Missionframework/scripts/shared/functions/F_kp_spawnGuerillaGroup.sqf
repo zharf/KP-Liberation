@@ -41,7 +41,7 @@ while {(count (units _grp) < _amount)} do {
 
 	_unit forceAddUniform (selectRandom _uniforms);
 	_unit addItemToUniform "FirstAidKit";
-	_unit addItemToUniform "MiniGrenade";
+	_unit addItemToUniform "LIB_F1";
 	_unit addVest (selectRandom _vests);
 	for "_i" from 1 to (_weapon select 2) do {_unit addItemToVest (_weapon select 1);};
 	_unit addHeadgear (selectRandom _headgear);
@@ -56,12 +56,12 @@ while {(count (units _grp) < _amount)} do {
 	_unit linkItem "ItemMap";
 	_unit linkItem "ItemCompass";
 	_unit linkItem "ItemWatch";
-	_unit linkItem "ItemRadio";
 
 	if ((_tier > 1) && ((random 100) <= KP_liberation_resistance_at_chance)) then {
-		_unit addBackpack "B_FieldPack_cbr";
-		for "_i" from 1 to 3 do {_unit addItemToBackpack "RPG7_F";};
-		_unit addWeapon "launch_RPG7_F";
+		_unit addBackpack "B_LIB_SOV_RA_Rucksack_Vide";
+		//_unit addItemToBackpack "LIB_Rpg6";
+		_unit addWeapon "fow_w_m1a1_bazooka";
+		_unit addItemToBackpack "fow_1Rnd_m6a1";
 	};
 };
 

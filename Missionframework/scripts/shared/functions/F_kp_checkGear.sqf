@@ -48,16 +48,16 @@ if (_validItemsCount != count _playerItems) then {
 	_text remoteExec ["diag_log",2];
 	private _badItems = "";
 	{if (((_x find "acre") == -1) && ((_x find "tf_") == -1) && ((_x find "tfar_") == -1)) then {_badItems = _badItems + _x + "\n";};} forEach (_playerItems - KP_liberation_allowed_items);
-	hint format [localize "STR_BLACKLISTED_ITEM_FOUND", _badItems];
-	removeAllWeapons player;
-	removeAllItems player;
-	removeAllAssignedItems player;
-	removeUniform player;
-	removeVest player;
-	removeBackpack player;
-	removeHeadgear player;
-	removeGoggles player;
-	_return = false;
+//	hint format [localize "STR_BLACKLISTED_ITEM_FOUND", _badItems];
+//	removeAllWeapons player;
+//	removeAllItems player;
+//	removeAllAssignedItems player;
+//	removeUniform player;
+//	removeVest player;
+//	removeBackpack player;
+//	removeHeadgear player;
+//	removeGoggles player;
+//	_return = false;
 };
 
 _return

@@ -5,7 +5,6 @@ _fob_templates = [
 "scripts\fob_templates\template5.sqf",
 "scripts\fob_templates\template4.sqf",
 "scripts\fob_templates\template3.sqf",
-"scripts\fob_templates\template2.sqf",
 "scripts\fob_templates\template1.sqf"
 ];
 

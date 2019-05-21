@@ -13,6 +13,7 @@ switch (KP_liberation_preset_blufor) do {
     case 12: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\gm_east_win.sqf";};
 	case 13: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\csat.sqf";};
 	case 14: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\csat_apex.sqf";};
+	case 15: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\WWII.sqf";};
 	default {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
 };
 
@@ -28,6 +29,7 @@ switch (KP_liberation_preset_opfor) do {
 	case 9: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\gm_west_win.sqf";};
     case 10: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\gm_east.sqf";};
 	case 11: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\gm_east_win.sqf";};
+	case 12: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\WWII.sqf";};
 	default {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
 
@@ -37,6 +39,7 @@ switch (KP_liberation_preset_resistance) do {
 	case 3: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\middle_eastern.sqf";};
 	case 4: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\RACS.sqf";};
     case 5: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\germany.sqf";};
+	case 6: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\WWII.sqf";};
 	default {[] call compileFinal preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
@@ -45,6 +48,7 @@ switch (KP_liberation_preset_civilians) do {
 	case 2: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\middle_eastern.sqf";};
 	case 3: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\RDSCiv.sqf";};
     case 4: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\germany.sqf";};
+	case 5: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\WWII.sqf";};
 	default {[] call compileFinal preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 
@@ -53,7 +57,6 @@ squads = [
 	[blufor_squad_inf_light,200,0,0],
 	[blufor_squad_inf,300,0,0],
 	[blufor_squad_at,200,250,0],
-	[blufor_squad_aa,200,250,0],
 	[blufor_squad_recon,250,0,0],
 	[blufor_squad_para,200,0,0]
 ];
@@ -94,6 +97,50 @@ GRLIB_ignore_colisions_when_building = [
 	"Land_ClutterCutter_large_F",
 	"Land_HighVoltageColumnWire_F",
 	"Land_PowerWireBig_left_F",
+	"geist_Flag_WHT_F",
+	"geist_Flag_3Rs3_F",
+	"geist_Flag_WSSss_F",
+	"geist_Flag_3Rs1_F",
+	"Land_WW2_Wire_Bruno",
+	"Land_WW2_Wire_2",
+	"Land_WW2_Wire_1",
+	"Land_WW2_Wire_3",
+	"Land_I44_HedgeHog",
+	"Land_Fort_Bagfence_Bunker",
+	"Land_WW2_BET_Achtung_Minen",
+	"Land_Setka_Car",
+	"Land_WW2_Setka_Dor",
+	"Land_WW2_Setka_Vert",
+	"Land_WW2_CamoNet_Tank",
+	"Land_WW2_CamoNet_NATO_Var1",
+	"Land_Campfire_F",
+	"Land_I44_Buildings_CT_Straight_Wire",
+	"Land_I44_Buildings_CT_Straight_Side",
+	"Land_I44_Buildings_CT_Straight",
+	"Land_I44_Buildings_CT_Corner",
+	"Land_I44_Buildings_Trench1",
+	"Land_I44_Buildings_Trench2",
+	"Land_WW2_Big_Infantry_Trench",
+	"Land_WW2_Small_Infantry_Trench1",
+	"Land_WW2_Foxhole",
+	"Land_WW2_Trench_Single",
+	"Land_WW2_Trench76",
+	"Land_WW2_Trench_MG_Low",
+	"Land_WW2_Trench_Mortar",
+	"Land_WW2_Fortification_Pillbox_Small",
+	"Land_WW2_TrenchTank",
+	"Land_WW2_Fortification_Trench_Bunker_Big",
+	"Land_WW2_Fortification_Trench_Bunker_Big_Doors",
+	"Land_WW2_Fortification_Trench_Bunker_FFP",
+	"Land_WW2_Fortification_Trench_Bunker_FFP_Doors",
+	"Land_WW2_Fortification_Trench_Corner_X2",
+	"Land_WW2_Fortification_Trench_Corner_X1",
+	"Land_WW2_Fortification_Trench_Corner_90",
+	"Land_WW2_Fortification_Trench_Long_X3",
+	"Land_WW2_Fortification_Trench_Wall",
+	"Land_WW2_Fortification_Trench_Wide",
+	"Land_WW2_Fortification_Trench_Bridge",
+	KP_liberation_air_vehicle_building,
 	"B_HMG_01_F",										//Mk30A HMG .50
 	"B_HMG_01_high_F",									//Mk30 HMG .50 (Raised)
 	"B_HMG_01_A_F",										//Mk30 HMG .50 (Autonomous)
@@ -156,7 +203,7 @@ opfor_squad_8_infkillers = [opfor_squad_leader,opfor_machinegunner,opfor_machine
 opfor_squad_8_tankkillers = [opfor_squad_leader,opfor_medic,opfor_machinegunner,opfor_rpg,opfor_rpg,opfor_at,opfor_at,opfor_at];
 opfor_squad_8_airkillers = [opfor_squad_leader,opfor_medic,opfor_machinegunner,opfor_rpg,opfor_rpg,opfor_aa,opfor_aa,opfor_aa];
 friendly_infantry_classnames = [];
-{if (!(_x in friendly_infantry_classnames)) then {friendly_infantry_classnames pushBack _x};} forEach (blufor_squad_inf_light + blufor_squad_inf + blufor_squad_at + blufor_squad_aa + blufor_squad_recon + blufor_squad_para);
+{if (!(_x in friendly_infantry_classnames)) then {friendly_infantry_classnames pushBack _x};} forEach (blufor_squad_inf_light + blufor_squad_inf + blufor_squad_at + blufor_squad_recon + blufor_squad_para);
 {if (!((_x select 0) in friendly_infantry_classnames)) then {friendly_infantry_classnames pushBack (_x select 0)};} forEach infantry_units;
 all_hostile_classnames = (land_vehicles_classnames + opfor_air + opfor_choppers + opfor_troup_transports + opfor_vehicles_low_intensity);
 {land_vehicles_classnames pushback (_x select 0);} foreach (heavy_vehicles + light_vehicles);
@@ -176,6 +223,6 @@ ammobox_transports_typenames = ammobox_transports_typenames select {[_x] call F_
 elite_vehicles = elite_vehicles select {[_x] call F_checkClass};
 opfor_infantry = [opfor_sentry,opfor_rifleman,opfor_grenadier,opfor_squad_leader,opfor_team_leader,opfor_marksman,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_rpg,opfor_at,opfor_aa,opfor_officer,opfor_sharpshooter,opfor_sniper,opfor_engineer];
 GRLIB_intel_file = "Land_File1_F";
-GRLIB_intel_laptop = "Land_Laptop_device_F";
-GRLIB_sar_wreck = "Land_Wreck_Heli_Attack_01_F";
+GRLIB_intel_laptop = "LIB_SovRadio";
+GRLIB_sar_wreck = "sab_he111_wreck";
 GRLIB_sar_fire = "test_EmptyObjectForFireBig";

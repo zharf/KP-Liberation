@@ -11,7 +11,7 @@ while { count (units _grp) > 0 } do {
 		_waypoint = _grp addWaypoint [markerpos reinforcements_sector_under_attack, 50];
 		_waypoint setWaypointType "MOVE";
 		_waypoint setWaypointSpeed "FULL";
-		_waypoint setWaypointBehaviour "SAFE";
+		_waypoint setWaypointBehaviour "AWARE";
 		_waypoint setWaypointCombatMode "YELLOW";
 		_waypoint setWaypointCompletionRadius 30;
 		_waypoint = _grp addWaypoint [markerpos reinforcements_sector_under_attack, 50];

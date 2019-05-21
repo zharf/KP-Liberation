@@ -17,7 +17,8 @@ if (((typeOf _vehtorecycle) in _building_classnames) ||
 	((typeOf _vehtorecycle) in KP_liberation_ace_crates) ||
 	((typeOf _vehtorecycle) == "B_Slingload_01_Repair_F") ||
 	((typeOf _vehtorecycle) == "B_Slingload_01_Fuel_F") ||
-	((typeOf _vehtorecycle) == "B_Slingload_01_Ammo_F")) then {
+	((typeOf _vehtorecycle) == "B_Slingload_01_Ammo_F") ||
+	((typeof _vehtorecycle) == "FoW_Hix_Black")) then {
 	_suppMulti = 0.5;
 	_ammoMulti = 0.5;
 	_fuelMulti = 0.5;

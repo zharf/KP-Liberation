@@ -9,6 +9,7 @@ switch (KP_liberation_arsenal) do {
 	case 7: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\gm_west.sqf";};
 	case 8: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\gm_east.sqf";};
 	case 9: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\csat.sqf";};
+	case 10: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\WWII.sqf";};
 	default {GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];};
 };
 
@@ -78,3 +79,34 @@ execVM "scripts\client\ui\intro.sqf";
 [] execVM "onPlayerRespawn.sqf";
 
 [player] joinSilent (createGroup [GRLIB_side_friendly, true]);
+
+// TODO hack to add pylon configuring ability for the misconfigured LIB_OpelBlitz_Ammo
+private _filter = "isClass (_x >> 'Components' >> 'TransportPylonsComponent') && {(getNumber (_x >> 'scope')) > 0}";
+KP_liberation_aircraftWithPylons = (_filter configClasses (configFile >> "CfgVehicles")) apply {configName _x};
+{
+    [_x, "init", {
+        params ["_aircraft"];
+
+        private _loadoutAction = [
+            "KP_liberation_loadoutAction",
+            localize "STR_ACE_Pylons_ConfigurePylons",
+            "",
+            {[_target] call ace_pylons_fnc_showDialog},
+            {
+                if (!ace_pylons_enabledFromAmmoTrucks) exitWith {false};
+
+                // just make sure it's not already supported by ace pylons
+                private _vehicles = nearestObjects [_target, ["Air", "LandVehicle", "Slingload_base_F", "ReammoBox_F"], ace_pylons_searchDistance + 10];
+                private _filter = ["transportAmmo", "ace_rearm_defaultSupply"] select (["ace_rearm"] call ace_common_fnc_isModLoaded);
+                private _alreadySupported = {(getNumber (configFile >> "CfgVehicles" >> typeOf _x >> _filter)) > 0} count _vehicles;
+
+                // find the vehicle we want to add support for
+                private _rearmVehicles = count (nearestObjects [_target, ["LIB_OpelBlitz_Ammo"], ace_pylons_searchDistance + 10]);
+
+                (_alreadySupported <= 0 && _rearmVehicles > 0 && {[ace_player, _target] call ace_pylons_fnc_canConfigurePylons})
+            }
+        ] call ace_interact_menu_fnc_createAction;
+
+        [_aircraft, 0, ["ACE_MainActions"], _loadoutAction] call ace_interact_menu_fnc_addActionToObject;
+    }, false, [], true] call CBA_fnc_addClassEventHandler;
+} forEach KP_liberation_aircraftWithPylons;

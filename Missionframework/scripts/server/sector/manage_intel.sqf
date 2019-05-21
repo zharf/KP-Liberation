@@ -18,7 +18,8 @@ private _compatible_classnames = [
 "Land_u_Barracks_V2_F",
 "Land_MilOffices_V1_F",
 "Land_Research_HQ_F",
-"Land_Research_house_V1_F"
+"Land_Research_house_V1_F",
+"Land_WW2_BET_RGB_671"
 ];
 
 if (isNil "KP_military_sectors_already_activated") then {KP_military_sectors_already_activated = []};

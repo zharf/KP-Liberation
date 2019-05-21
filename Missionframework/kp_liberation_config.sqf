@@ -21,7 +21,8 @@ KP_liberation_medical_vehicles = [
     "gm_gc_army_ural375d_medic",
     "gm_gc_army_ural375d_medic_win",
     "gm_ge_army_u1300l_medic",
-    "gm_ge_army_u1300l_medic_win_rc"
+    "gm_ge_army_u1300l_medic_win_rc",
+	"LIB_ger_opelblitz_ambulance"
 ];
 
 // Building classnames which also function as ACE medical facilities.
@@ -56,8 +57,9 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 11 = Germany East (Global Mobilization)
 12 = Germany East Winter (Global Mobilization)
 13 = CSAT Brown
-14 = CSAT Green */
-KP_liberation_preset_blufor = 0;
+14 = CSAT Green
+15 = WWII Germany */
+KP_liberation_preset_blufor = 15;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -71,8 +73,9 @@ KP_liberation_preset_blufor = 0;
 8  = Germany West (Global Mobilization)
 9  = Germany West Winter (Global Mobilization)
 10 = Germany East (Global Mobilization)
-11 = Germany East Winter (Global Mobilization) */
-KP_liberation_preset_opfor = 0;
+11 = Germany East Winter (Global Mobilization)
+12 = WWII Soviet */
+KP_liberation_preset_opfor = 12;
 
 /* Resistance preset:
 0 = Custom (default vanilla FIA)
@@ -80,16 +83,18 @@ KP_liberation_preset_opfor = 0;
 2 = RHS GREF
 3 = Project OPFOR (Middle Eastern)
 4 = Project OPFOR (Sahrani)
-5 = Germany (Global Mobilization) */
-KP_liberation_preset_resistance = 0;
+5 = Germany (Global Mobilization)
+6 = WWII Polish */
+KP_liberation_preset_resistance = 6;
 
 /* Civilians preset:
 0 = Custom (default vanilla)
 1 = Apex Tanoa (apex vanilla)
 2 = Project OPFOR (Middle Eastern)
 3 = RDS Civilians
-4 = Germany (Global Mobilization) */
-KP_liberation_preset_civilians = 0;
+4 = Germany (Global Mobilization)
+5 = WWII Polish */
+KP_liberation_preset_civilians = 5;
 
 /* Which arsenal preset should be used?
 0 = Use the default blacklist method (defined below).
@@ -101,8 +106,9 @@ KP_liberation_preset_civilians = 0;
 6 = 3cbBAF and RHS USAF arsenal preset.
 7 = GM West arsenal preset.
 8 = GM East arsenal preset.
-9 = CSAT arsenal preset. */
-KP_liberation_arsenal = 0;
+9 = CSAT arsenal preset.
+10 = WWII Germany */
+KP_liberation_arsenal = 10;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
@@ -384,6 +390,11 @@ KP_liberation_allowed_items_extension = [
 /* - Configuration settings for crates transported by vehicles.
 Format = ["classname", distance behind vehicle to unload crate, attachTo positions for each box],	*/
 box_transport_config = [
+	["LIB_opelblitz_tentB_Feldgrau", -6.5, [0,0.1,0.5], [0,-1.3,0.5]],
+	["LIB_SdKfz_7", -6.5, [0,-0.4,1.5], [0,-1.5,1.5], [0,-2.5,1.5]],
+	["LIB_Zis5v", -6.5, [0,-0.3,0], [0,-1.8,0]],
+	["LIB_opelblitz_open_Camo", -6.5, [0,0.1,0.5], [0,-1.3,0.5]],
+	["LIB_opelblitz_tentB_Camo", -6.5, [0,0.1,0.5], [0,-1.3,0.5]],
 	["C_Offroad_01_F", -6.5, [0,-1.7,0.4]],
 	["I_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
 	["O_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
@@ -505,7 +516,8 @@ ai_resupply_sources = [
     "gm_gc_army_ural4320_reammo",
     "gm_gc_army_ural4320_reammo_win",
     "gm_ge_army_kat1_451_reammo",
-    "gm_ge_army_kat1_451_reammo_win"
+    "gm_ge_army_kat1_451_reammo_win",
+	"LIB_OpelBlitz_Ammo"
 ];
 
 // Everything that can resupply other vehicles.
@@ -528,7 +540,8 @@ vehicle_repair_sources = [
     "gm_gc_army_ural4320_repair",
     "gm_gc_army_ural4320_repair_win",
     "gm_ge_army_u1300l_repair",
-    "gm_ge_army_u1300l_repair_win"
+    "gm_ge_army_u1300l_repair_win",
+	"LIB_OpelBlitz_Parm"
 ];
 
 vehicle_rearm_sources = [
@@ -549,7 +562,8 @@ vehicle_rearm_sources = [
     "gm_gc_army_ural4320_reammo",
     "gm_gc_army_ural4320_reammo_win",
     "gm_ge_army_kat1_451_reammo",
-    "gm_ge_army_kat1_451_reammo_win"
+    "gm_ge_army_kat1_451_reammo_win",
+	"LIB_OpelBlitz_Ammo"
 ];
 
 vehicle_refuel_sources = [
@@ -570,7 +584,8 @@ vehicle_refuel_sources = [
     "gm_gc_army_ural375d_refuel",
     "gm_gc_army_ural375d_refuel_win",
     "gm_ge_army_kat1_451_refuel",
-    "gm_ge_army_kat1_451_refuel_win"
+    "gm_ge_army_kat1_451_refuel_win",
+	"LIB_OpelBlitz_Fuel"
 ];
 
 // Classnames of boats, so they can be built on water.

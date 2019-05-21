@@ -29,10 +29,14 @@ if (combat_readiness > 15) then {
 				reinforcements_sector_under_attack = _targetsector;
 				reinforcements_set = true;
 				["lib_reinforcements",[markertext _targetsector]] remoteExec ["bis_fnc_shownotification"];
+				stats_reinforcements_called = stats_reinforcements_called + 1;
 				if ((random combat_readiness) > (20 + (30 / GRLIB_csat_aggressivity))) then {
 					[_targetsector] spawn send_paratroopers;
+					if (GRLIB_difficulty_modifier > 1) then {
+						sleep 10;
+						[_targetsector] spawn send_paratroopers;
+					};
 				};
-				stats_reinforcements_called = stats_reinforcements_called + 1;
 			};
 		};
 	};
