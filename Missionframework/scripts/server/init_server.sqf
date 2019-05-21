@@ -93,3 +93,13 @@ execVM "scripts\server\offloading\group_diag.sqf";
 if (KP_liberation_restart > 0) then {
 	execVM "scripts\server\game\server_restart.sqf";
 };
+
+private _toHide = ["Lamps_base_f"];
+{
+    private _found = [worldSize / 2, worldSize / 2] nearObjects [_x, worldSize];
+    private _terrain = nearestTerrainObjects [[worldSize / 2, worldSize / 2], [_x], worldSize, false];
+    _found append _terrain;
+    {
+        _x hideObjectGlobal true;
+    } forEach _found;
+} forEach _toHide;
