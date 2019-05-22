@@ -1963,3 +1963,7 @@ GRLIB_arsenal_backpacks = [
 	"B_LIB_GER_Rucksack_STG44",
 	"B_LIB_GER_Rucksack_Vide"
 ];
+
+WW2LIB_ace_extra_magazines = [
+	"LIB_1Rnd_RPzB"
+];
