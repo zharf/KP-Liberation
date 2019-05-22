@@ -107,8 +107,9 @@ KP_liberation_preset_civilians = 5;
 7 = GM West arsenal preset.
 8 = GM East arsenal preset.
 9 = CSAT arsenal preset.
-10 = WWII Germany */
-KP_liberation_arsenal = 10;
+10 = WWII Germany
+11 = WWII Western Allied */
+KP_liberation_arsenal = 11;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
@@ -370,14 +371,7 @@ KP_liberation_allowed_items_extension = [
 	"UK3CB_BAF_AT4_CS_AP_Mag",
 	"UK3CB_BAF_Javelin_Launcher",
 	"sma_spitfire_03_rds_low_ard_red",
-	"ACE_Chemlight_Shield_Orange",
-	"ACE_Chemlight_Shield_White",
-	"ACE_Chemlight_Shield_Blue",
-	"ACE_Chemlight_Shield_Yellow",
-	"ACE_Chemlight_Shield_Green",
-	"ACE_Chemlight_Shield_Red",
 	"ACE_ReserveParachute",
-	"ACE_launch_NLAW_Used_F",
     "ACE_PreloadedMissileDummy_Strela_2_CUP",
 	"ACE_PreloadedMissileDummy_Stinger_CUP",
 	"ACE_PreloadedMissileDummy_Igla_CUP",
