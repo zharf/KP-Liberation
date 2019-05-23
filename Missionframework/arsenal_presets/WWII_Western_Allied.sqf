@@ -142,7 +142,13 @@ GRLIB_arsenal_magazines = [
 	"LIB_1Rnd_G_Mk2",
 	"LIB_1Rnd_G_M9A1",
 	"fow_flamefuel",
-	"fow_8Rnd_762x63_T"
+	"fow_8Rnd_762x63_T",
+	"murshun_cigs_matches",
+	"immersion_pops_poppack",
+	"murshun_cigs_lighter",
+	"murshun_cigs_cigpack",
+	"LIB_10Rnd_770x56_MkVIII",
+	"LIB_30Rnd_770x56_MKVIII"
 ];
 
 GRLIB_arsenal_items = [
@@ -815,7 +821,6 @@ GRLIB_arsenal_items = [
 	"G_GEHeadBandage_Stained",
 	"G_GEMedicVest_00",
 	"G_LIB_Binoculars",
-	"LIB_Glasses",
 	"N_GEHeadBandage_Bloody",
 	"N_GEHeadBandage_Clean",
 	"N_GEHeadBandage_Stained",
@@ -854,7 +859,15 @@ GRLIB_arsenal_items = [
 	"U_LIB_FRA_InfM41VvPmMtM1Tho",
 	"U_LIB_FRA_InfM41VvPvMotRM1Gar",
 	"U_LIB_FRA_InfM41VvPmQm1RM1Gar",
-	"U_LIB_FRA_CrewRM41VgPmMotM1Car"
+	"U_LIB_FRA_CrewRM41VgPmMotM1Car",
+	"fow_g_glasses1",
+	"fow_g_glasses2",
+	"fow_g_glasses3",
+	"ACE_LIB_FireCord",
+	"ACE_LIB_LadungPM",
+	"adv_aceSplint_splint",
+	"FSGm_ItemMedicBag",
+	"FSGm_ItemMedicBagMil"
 ];
 
 GRLIB_arsenal_backpacks = [

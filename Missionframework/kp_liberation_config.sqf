@@ -59,8 +59,10 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 12 = Germany East Winter (Global Mobilization)
 13 = CSAT Brown
 14 = CSAT Green
-15 = WWII Germany */
-KP_liberation_preset_blufor = 15;
+15 = WWII Germany
+16 = WWII Soviet
+17 = WWII Western Allied */
+KP_liberation_preset_blufor = 17;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -75,8 +77,9 @@ KP_liberation_preset_blufor = 15;
 9  = Germany West Winter (Global Mobilization)
 10 = Germany East (Global Mobilization)
 11 = Germany East Winter (Global Mobilization)
-12 = WWII Soviet */
-KP_liberation_preset_opfor = 12;
+12 = WWII Soviet
+13 = WWII German */
+KP_liberation_preset_opfor = 13;
 
 /* Resistance preset:
 0 = Custom (default vanilla FIA)
@@ -85,8 +88,9 @@ KP_liberation_preset_opfor = 12;
 3 = Project OPFOR (Middle Eastern)
 4 = Project OPFOR (Sahrani)
 5 = Germany (Global Mobilization)
-6 = WWII Polish */
-KP_liberation_preset_resistance = 6;
+6 = WWII Polish
+7 = WWII German */
+KP_liberation_preset_resistance = 7;
 
 /* Civilians preset:
 0 = Custom (default vanilla)
@@ -94,7 +98,7 @@ KP_liberation_preset_resistance = 6;
 2 = Project OPFOR (Middle Eastern)
 3 = RDS Civilians
 4 = Germany (Global Mobilization)
-5 = WWII Polish */
+5 = WWII Civilians*/
 KP_liberation_preset_civilians = 5;
 
 /* Which arsenal preset should be used?
@@ -108,8 +112,9 @@ KP_liberation_preset_civilians = 5;
 7 = GM West arsenal preset.
 8 = GM East arsenal preset.
 9 = CSAT arsenal preset.
-10 = WWII Germany */
-KP_liberation_arsenal = 10;
+10 = WWII Germany
+11 = WWII Western Allied */
+KP_liberation_arsenal = 11;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
@@ -371,14 +376,7 @@ KP_liberation_allowed_items_extension = [
 	"UK3CB_BAF_AT4_CS_AP_Mag",
 	"UK3CB_BAF_Javelin_Launcher",
 	"sma_spitfire_03_rds_low_ard_red",
-	"ACE_Chemlight_Shield_Orange",
-	"ACE_Chemlight_Shield_White",
-	"ACE_Chemlight_Shield_Blue",
-	"ACE_Chemlight_Shield_Yellow",
-	"ACE_Chemlight_Shield_Green",
-	"ACE_Chemlight_Shield_Red",
 	"ACE_ReserveParachute",
-	"ACE_launch_NLAW_Used_F",
     "ACE_PreloadedMissileDummy_Strela_2_CUP",
 	"ACE_PreloadedMissileDummy_Stinger_CUP",
 	"ACE_PreloadedMissileDummy_Igla_CUP",

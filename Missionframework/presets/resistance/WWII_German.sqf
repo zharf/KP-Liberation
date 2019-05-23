@@ -44,7 +44,7 @@ KP_liberation_guerilla_weapons_1 =[
 KP_liberation_guerilla_weapons_2 =[
 	["LIB_K98_Late","LIB_5Rnd_792x57",5,"",""],
 	["LIB_LeeEnfield_No4","LIB_10Rnd_770x56",5,"",""],
-	["LIB_M1_Garand","LIB_8Rnd_762x63",5,"",""],
+	["LIB_M1_Garand","LIB_8Rnd_762x63",5,"",""]
 ];
 
 KP_liberation_guerilla_weapons_3 =[
@@ -76,7 +76,7 @@ KP_liberation_guerilla_uniforms_2 = [
 
 KP_liberation_guerilla_uniforms_3 = [
 	"U_GELIB_FRA_SoldierFF_gvmpFF16",
-	"U_GELIB_FRA_Woodlander02"
+	"U_GELIB_FRA_Woodlander02",
 	"U_GELIB_FRA_MGunner_gvmpFF14",
 	"U_GELIB_FRA_CitizenFF04",
 	"U_LIB_USA_NCO_InfM41VvPmPvtRM1Gar",
