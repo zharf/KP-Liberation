@@ -65,6 +65,9 @@ light_vehicles = [
 	["fow_v_truppenfahrrad_ger_heer",1,0,0],							//Bike
 	["sab_scooter2",20,0,0],											//Scooter
 	["fow_v_willys_usa",50,0,30],                         				//Willys Jeep
+	["LIB_UK_Willys_MB_Hood",50,0,30],                         			//Willys Jeep hood
+	["LIB_UK_Willys_MB_Ambulance",50,0,30],                         	//Willys Jeep Medical
+	["LIB_UK_Willys_MB_M1919",50,15,30],                         		//Willys Jeep MG
 	["LIB_UniversalCarrier",50,10,30],                                  //Bren Carrier 
 	["LIB_US_Scout_M3",50,30,30],                        				//Scout Car (M3)
 	["LIB_AustinK5_Open",100,0,50],                               		//Austin K5
@@ -89,7 +92,11 @@ heavy_vehicles = [
 	["LIB_M4A4_FIREFLY",700,750,800],                          				//Sherman Firefly
 	["LIB_M4A3_76_HVSS",800,800,800],										//M4A3(76) HVSS
 	["LIB_M4A3_76",800,800,800],											//M4A3 (76)
-	["churchill_mkIII",1000,400,800]										//Churchill
+	["churchill_mkIII",1000,400,800],										//Churchill
+	["LIB_Churchill_Mk7",1000,400,800],										//Churchill
+	["LIB_Churchill_Mk7_Crocodile",1000,400,1000],							//Churchill Flamethrower
+	["LIB_Churchill_Mk7_AVRE",1000,500,800],								//Churchill AVRE
+	["LIB_Churchill_Mk7_Howitzer",1000,600,800]								//Churchill Howizter
 ];
 
 air_vehicles = [
@@ -201,16 +208,16 @@ support_vehicles = [
 // Pre-made squads for the commander build menu. These shouldn't exceed 10 members.
 // Light infantry squad.
 blufor_squad_inf_light = [
-	"fow_s_uk_section_commander",
-	"fow_s_uk_teamleader",
-	"fow_s_uk_rifleman",
-	"fow_s_uk_bren_gunner",
-	"fow_s_uk_bren_asst",
-	"fow_s_uk_medic",
-	"fow_s_uk_rifleman",
-	"fow_s_uk_rifleman",
-	"fow_s_uk_rifleman",
-	"fow_s_uk_rifleman"
+	"LIB_UK_Sergeant",
+	"LIB_UK_LanceCorporal",
+	"LIB_UK_Corporal",
+	"LIB_UK_Grenadier",
+	"LIB_UK_Corporal",
+	"LIB_UK_Medic",
+	"LIB_UK_Rifleman",
+	"LIB_UK_Rifleman",
+	"LIB_UK_Rifleman",
+	"LIB_UK_Rifleman"
 ];
 
 // Heavy infantry squad.
@@ -277,5 +284,9 @@ elite_vehicles = [
 	"sab_b17",
 	"sab_b24",
 	"sab_b25",
-	"sab_meteor"
+	"sab_meteor",
+	"LIB_Churchill_Mk7",									//Churchill
+	"LIB_Churchill_Mk7_Crocodile",							//Churchill Flamethrower
+	"LIB_Churchill_Mk7_AVRE",								//Churchill AVRE
+	"LIB_Churchill_Mk7_Howitzer"							//Churchill Howizter
 ];
