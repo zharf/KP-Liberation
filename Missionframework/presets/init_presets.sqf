@@ -48,7 +48,7 @@ switch (KP_liberation_preset_civilians) do {
 	case 2: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\middle_eastern.sqf";};
 	case 3: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\RDSCiv.sqf";};
     case 4: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\germany.sqf";};
-	case 5: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\WWII_German.sqf";};
+	case 5: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\WWII_Civilian.sqf";};
 	default {[] call compileFinal preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 
@@ -223,6 +223,6 @@ ammobox_transports_typenames = ammobox_transports_typenames select {[_x] call F_
 elite_vehicles = elite_vehicles select {[_x] call F_checkClass};
 opfor_infantry = [opfor_sentry,opfor_rifleman,opfor_grenadier,opfor_squad_leader,opfor_team_leader,opfor_marksman,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_rpg,opfor_at,opfor_aa,opfor_officer,opfor_sharpshooter,opfor_sniper,opfor_engineer];
 GRLIB_intel_file = "Land_File1_F";
-GRLIB_intel_laptop = "LIB_SovRadio";
-GRLIB_sar_wreck = "sab_he111_wreck";
+GRLIB_intel_laptop = "LIB_GerRadio";
+GRLIB_sar_wreck = "LIB_CG4_WACO_Wreck2";
 GRLIB_sar_fire = "test_EmptyObjectForFireBig";

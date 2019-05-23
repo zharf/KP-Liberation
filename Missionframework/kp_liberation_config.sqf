@@ -22,7 +22,8 @@ KP_liberation_medical_vehicles = [
     "gm_gc_army_ural375d_medic_win",
     "gm_ge_army_u1300l_medic",
     "gm_ge_army_u1300l_medic_win_rc",
-	"LIB_ger_opelblitz_ambulance"
+	"LIB_ger_opelblitz_ambulance",
+	"LIB_US_GMC_Ambulance"
 ];
 
 // Building classnames which also function as ACE medical facilities.
@@ -107,9 +108,8 @@ KP_liberation_preset_civilians = 5;
 7 = GM West arsenal preset.
 8 = GM East arsenal preset.
 9 = CSAT arsenal preset.
-10 = WWII Germany
-11 = WWII Western Allied */
-KP_liberation_arsenal = 11;
+10 = WWII Germany */
+KP_liberation_arsenal = 10;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
@@ -371,7 +371,14 @@ KP_liberation_allowed_items_extension = [
 	"UK3CB_BAF_AT4_CS_AP_Mag",
 	"UK3CB_BAF_Javelin_Launcher",
 	"sma_spitfire_03_rds_low_ard_red",
+	"ACE_Chemlight_Shield_Orange",
+	"ACE_Chemlight_Shield_White",
+	"ACE_Chemlight_Shield_Blue",
+	"ACE_Chemlight_Shield_Yellow",
+	"ACE_Chemlight_Shield_Green",
+	"ACE_Chemlight_Shield_Red",
 	"ACE_ReserveParachute",
+	"ACE_launch_NLAW_Used_F",
     "ACE_PreloadedMissileDummy_Strela_2_CUP",
 	"ACE_PreloadedMissileDummy_Stinger_CUP",
 	"ACE_PreloadedMissileDummy_Igla_CUP",
@@ -511,7 +518,9 @@ ai_resupply_sources = [
     "gm_gc_army_ural4320_reammo_win",
     "gm_ge_army_kat1_451_reammo",
     "gm_ge_army_kat1_451_reammo_win",
-	"LIB_OpelBlitz_Ammo"
+	"LIB_OpelBlitz_Ammo",
+	"LIB_AustinK5_Ammo",
+	"LIB_US_GMC_Ammo"
 ];
 
 // Everything that can resupply other vehicles.
@@ -535,7 +544,8 @@ vehicle_repair_sources = [
     "gm_gc_army_ural4320_repair_win",
     "gm_ge_army_u1300l_repair",
     "gm_ge_army_u1300l_repair_win",
-	"LIB_OpelBlitz_Parm"
+	"LIB_OpelBlitz_Parm",
+	"LIB_US_GMC_Parm"
 ];
 
 vehicle_rearm_sources = [
@@ -579,7 +589,8 @@ vehicle_refuel_sources = [
     "gm_gc_army_ural375d_refuel_win",
     "gm_ge_army_kat1_451_refuel",
     "gm_ge_army_kat1_451_refuel_win",
-	"LIB_OpelBlitz_Fuel"
+	"LIB_OpelBlitz_Fuel",
+	"LIB_US_GMC_Fuel"
 ];
 
 // Classnames of boats, so they can be built on water.

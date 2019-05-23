@@ -9,8 +9,7 @@ switch (KP_liberation_arsenal) do {
 	case 7: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\gm_west.sqf";};
 	case 8: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\gm_east.sqf";};
 	case 9: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\csat.sqf";};
-	case 10: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\WWII_German.sqf";};
-	case 11: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\WWII_Western_Allied.sqf";};
+	case 10: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\WWII.sqf";};
 	default {GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];};
 };
 

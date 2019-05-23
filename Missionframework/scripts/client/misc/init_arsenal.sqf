@@ -80,9 +80,6 @@ if (KP_liberation_arsenalUsePreset) then {
 
     if (KP_liberation_ace && KP_liberation_arsenal_type) then {
         [player, KP_liberation_allowed_items, false] call ace_arsenal_fnc_addVirtualItems;
-        if (!(isNil "WW2LIB_ace_extra_magazines")) then {
-            (player getVariable "ace_arsenal_virtualItems") select 2 append WW2LIB_ace_extra_magazines;
-        }
     };
 
     // Lowercase all classnames
