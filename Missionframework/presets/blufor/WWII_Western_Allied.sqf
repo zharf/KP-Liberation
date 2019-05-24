@@ -63,7 +63,7 @@ infantry_units = [
 
 light_vehicles = [
 	["fow_v_truppenfahrrad_ger_heer",1,0,0],							//Bike
-	["sab_scooter2",20,0,0],											//Scooter
+	["sab_scooter2",20,0,20],											//Scooter
 	["fow_v_willys_usa",50,0,30],                         				//Willys Jeep
 	["LIB_UK_Willys_MB_Hood",50,0,30],                         			//Willys Jeep hood
 	["LIB_UK_Willys_MB_Ambulance",50,0,30],                         	//Willys Jeep Medical
