@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=313;
+		nextID=337;
 	};
 	class Camera
 	{
@@ -375,7 +375,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=193;
+									items=194;
 									class Item0
 									{
 										class data
@@ -3078,6 +3078,20 @@ class CustomAttributes
 											value="ace_arsenal_fontheight";
 										};
 									};
+									class Item193
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="adv_acesplint_patientcondition";
+										};
+									};
 								};
 							};
 						};
@@ -3094,7 +3108,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=193;
+									items=194;
 									class Item0
 									{
 										class data
@@ -10320,7 +10334,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.75;
+														value=0.60011798;
 													};
 												};
 												class Item1
@@ -10365,7 +10379,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.5;
+														value=0.80065298;
 													};
 												};
 												class Item1
@@ -11580,7 +11594,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -11761,6 +11775,51 @@ class CustomAttributes
 															};
 														};
 														value=4.5;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item193
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
 													};
 												};
 												class Item1
