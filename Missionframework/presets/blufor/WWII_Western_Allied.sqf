@@ -102,8 +102,8 @@ heavy_vehicles = [
 air_vehicles = [
 	["sab_gladiator",700,450,550],				//Bi-Plane
 	["sab_ca12bo",750,550,550],					//CA-12
-	["LIB_MKI_HADRIAN",600,0,0],                //Paraglider
-	["LIB_MKI_HADRIAN",600,0,0],                //Paraglider
+	["LIB_MKI_HADRIAN",200,0,0],                //Paraglider
+	["LIB_HORSA_RAF",300,0,0],                  //Paraglider
 	["LIB_C47_RAF",700,0,600],					//Paratrooper Plane
 	["spitfire_v_G",950,600,700],				//Spitfire Green
 	["spitfire_v",950,600,700],					//Spitfire Grey
