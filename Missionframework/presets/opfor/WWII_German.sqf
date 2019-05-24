@@ -92,6 +92,10 @@ opfor_battlegroup_vehicles = [
 	"fow_v_sdkfz_234_1",											    //Qilin (AT)
 	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
 	"LIB_OpelBlitz_Tent_Y_Camo",										//Tempest Transport (Covered)
+	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
+	"LIB_OpelBlitz_Tent_Y_Camo",										//Tempest Transport (Covered)
+	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
+	"LIB_OpelBlitz_Tent_Y_Camo",										//Tempest Transport (Covered)
 	"LIB_FlakPanzerIV_Wirbelwind",										//ZSU-39 Tigris
 	"LIB_FlakPanzerIV_Wirbelwind",										//ZSU-39 Tigris
 	"LIB_PzKpfwIV_H_tarn51c",                                           //Extra Tank 
@@ -107,6 +111,8 @@ opfor_battlegroup_vehicles = [
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
 	"LIB_Kfz1_MG42_camo",												//Ifrit (HMG)
+	"LIB_OpelBlitz_Tent_Y_Camo",										//Ifrit (HMG)
+	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
 	"LIB_OpelBlitz_Tent_Y_Camo",										//Ifrit (HMG)
 	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
 	"fow_v_sdkfz_222_foliage_ger_heer",									//MSE-3 Marid
