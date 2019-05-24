@@ -19,8 +19,8 @@ if ( _precise_position ) then {
 };
 
 _newvehicle = objNull;
-if ( _classname in opfor_choppers ) then {
-	_newvehicle = createVehicle [_classname, _spawnpos, [], 0, 'FLY'];
+if ( (_classname in opfor_choppers) || (_classname in opfor_air) ) then {
+	_newvehicle = createVehicle [_classname, _spawnpos, [], 0, "FLY"];
 	_newvehicle flyInHeight (100 + (random 200));
 } else {
 	_newvehicle = _classname createVehicle _spawnpos;
@@ -51,6 +51,10 @@ if ( _random_rotate ) then {
 	_newvehicle setdir (random 360);
 };
 _newvehicle setVectorUp surfaceNormal position _newvehicle;
+
+if ( (_classname in opfor_choppers) || (_classname in opfor_air) ) then {
+	_newvehicle setVelocity [100 * (sin (getdir _newvehicle)), 100 * (cos (getdir _newvehicle)), 1];
+};
 
 sleep 0.1;
 _newvehicle allowdamage true;
