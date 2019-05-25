@@ -78,6 +78,8 @@ while {true} do {
 		};
 	};
 
+    // TODO workaround for players being able to access unwanted items because I disabled the forbidden items thing
+    _loadouts_data = [];
 	lbAdd [203, "--"];
 	{lbAdd [203, _x param [0]]} forEach _loadouts_data;
 	lbSetCurSel [203, 0];
