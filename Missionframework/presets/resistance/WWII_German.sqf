@@ -10,11 +10,11 @@ Optional Mods:
 Standard loadout of the units will be replaced with a scripted one, which depends on the guerilla strength, after spawn */
 KP_liberation_guerilla_units = [
 	"LIB_GER_medic_HeerUffzK98",
-	"LIB_CIV_Woodlander_2",
-	"LIB_CIV_Assistant",
-	"LIB_CIV_Citizen_2",
+	"LIB_GER_hauptmann",
+	"fow_s_ger_heer_rifleman",
+	"LIB_GER_ober_grenadier",
 	"GELIB_FRA_MGunner_gvnpFF13",
-	"LIB_CIV_Villager_1",
+	"LIB_GER_radioman",
 	"GELIB_FRA_MGunner_gvmpFF14",
 	"GELIB_FRA_SoldierFF_gvmpFF16"
 ];
