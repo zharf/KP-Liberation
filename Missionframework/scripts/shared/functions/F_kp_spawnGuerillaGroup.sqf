@@ -62,6 +62,7 @@ while {(count (units _grp) < _amount)} do {
 		//_unit addItemToBackpack "LIB_Rpg6";
 		_unit addWeapon "fow_w_m1a1_bazooka";
 		_unit addItemToBackpack "fow_1Rnd_m6a1";
+		_unit addItemToBackpack "fow_1Rnd_m6a1";
 	};
 };
 
