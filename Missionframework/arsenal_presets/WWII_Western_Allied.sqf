@@ -897,7 +897,6 @@ GRLIB_arsenal_backpacks = [
 	"B_LIB_UK_HSack_Tea",
 	"B_LIB_UK_HSack_Blanco_Cape",
 	"B_LIB_UK_HSack_Blanco",
-	"B_AssaultPack_Kerry",
 	"B_LIB_US_Bandoleer",
 	"B_LIB_US_Backpack",
 	"B_LIB_US_Backpack_Bandoleer",
