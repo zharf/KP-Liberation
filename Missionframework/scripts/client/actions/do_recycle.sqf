@@ -18,6 +18,7 @@ if (((typeOf _vehtorecycle) in _building_classnames) ||
 	((typeOf _vehtorecycle) == "B_Slingload_01_Repair_F") ||
 	((typeOf _vehtorecycle) == "B_Slingload_01_Fuel_F") ||
 	((typeOf _vehtorecycle) == "B_Slingload_01_Ammo_F") ||
+	((typeOf _vehtorecycle) == "LIB_MKI_HADRIAN") ||
 	((typeof _vehtorecycle) == "FoW_Hix_Black")) then {
 	_suppMulti = 0.5;
 	_ammoMulti = 0.5;
