@@ -66,7 +66,6 @@ light_vehicles = [
 	["sab_scooter2",20,0,20],											//Scooter
 	["fow_v_willys_usa",50,0,30],                         				//Willys Jeep
 	["LIB_UK_Willys_MB_Hood",50,0,30],                         			//Willys Jeep hood
-	["LIB_UK_Willys_MB_Ambulance",50,0,30],                         	//Willys Jeep Medical
 	["LIB_UK_Willys_MB_M1919",50,15,30],                         		//Willys Jeep MG
 	["LIB_UniversalCarrier",50,10,30],                                  //Bren Carrier 
 	["LIB_US_Scout_M3",50,30,30],                        				//Scout Car (M3)
@@ -124,7 +123,8 @@ static_vehicles = [
 	["fow_w_m1919a6_deployed_middle_usa_m41",30,35,0],
 	["fow_w_m1919a6_deployed_high_usa_m41",30,35,0],
 	["fow_w_6Pounder_usa",100,200,0],
-	["fow_w_6Pounder_uk",100,200,0]
+	["fow_w_6Pounder_uk",100,200,0],
+	["LIB_M2_60_ACE",60,60,0]
 ];
 
 buildings = [
@@ -202,7 +202,8 @@ support_vehicles = [
 	["ACE_Track",10,0,0],
 	["LIB_US_GMC_Parm",325,0,75],									//HEMTT Repair
 	["LIB_US_GMC_Fuel",125,0,275],									//HEMTT Fuel
-	["LIB_US_GMC_Ammo",125,200,75]									//HEMTT Ammo
+	["LIB_US_GMC_Ammo",125,200,75],									//HEMTT Ammo
+	["LIB_UK_Willys_MB_Ambulance",50,0,30]                         	//Willys Jeep Medical
 ];
 
 // Pre-made squads for the commander build menu. These shouldn't exceed 10 members.
