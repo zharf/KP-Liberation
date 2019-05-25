@@ -177,7 +177,7 @@ if ((!(_sector in blufor_sectors)) && (([getmarkerpos _sector, [_opforcount] cal
 	} forEach _vehtospawn;
 
 	if (_building_ai_max > 0) then {
-		_allbuildings = (nearestObjects [_sectorpos, ["House"], _building_range]) select { (alive _x) && !(typeOf _x in ["Land_Posed"]) };
+		_allbuildings = (nearestObjects [_sectorpos, ["House"], _building_range]) select { (alive _x) && !(typeOf _x in ["Land_Posed", "land_wx_guardtower_02"]) };
 		_buildingpositions = [];
 		{
 			_buildingpositions = _buildingpositions + ([_x] call BIS_fnc_buildingPositions);
