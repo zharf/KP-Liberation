@@ -57,7 +57,6 @@ militia_squad = [
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders.
 militia_vehicles = [
 	"LIB_Kfz1_MG42_camo",													    //Qilin (armed)
-	"fow_v_kubelwagen_mg34_ger_heer",
 	"fow_v_sdkfz_250_camo_foliage_ger_heer"
 ];
 
