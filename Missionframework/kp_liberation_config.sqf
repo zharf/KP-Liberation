@@ -23,7 +23,8 @@ KP_liberation_medical_vehicles = [
     "gm_ge_army_u1300l_medic",
     "gm_ge_army_u1300l_medic_win_rc",
 	"LIB_ger_opelblitz_ambulance",
-	"LIB_US_GMC_Ambulance"
+	"LIB_US_GMC_Ambulance",
+	"LIB_UK_Willys_MB_Ambulance"
 ];
 
 // Building classnames which also function as ACE medical facilities.
