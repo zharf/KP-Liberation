@@ -598,3 +598,7 @@ GRLIB_arsenal_backpacks = [
 	"B_LIB_SOV_RA_Shinel",
 	"B_LIB_SOV_RA_Paradrop"
 ];
+
+WW2LIB_ace_extra_magazines = [
+
+];
