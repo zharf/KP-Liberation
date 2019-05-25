@@ -124,7 +124,7 @@ static_vehicles = [
 	["fow_w_m1919a6_deployed_high_usa_m41",30,35,0],
 	["fow_w_6Pounder_usa",100,200,0],
 	["fow_w_6Pounder_uk",100,200,0],
-	["LIB_M2_60_ACE",60,60,0]
+	["LIB_M2_60",60,60,0]
 ];
 
 buildings = [
