@@ -1,6 +1,6 @@
 private [ "_huronlocal" ];
 
-"huronmarker" setMarkerTextLocal "Potato 01";
+"huronmarker" setMarkerTextLocal "Queen 01";
 
 while { true } do {
 	_huronlocal = [] call F_spartanScan;
