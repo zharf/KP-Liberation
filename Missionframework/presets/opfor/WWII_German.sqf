@@ -62,11 +62,18 @@ militia_vehicles = [
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 opfor_vehicles = [
+	"LIB_SdKfz251",														//Ifrit (HMG)
+	"LIB_SdKfz251",														//Ifrit (HMG)
 	"fow_v_sdkfz_251_camo_foliage_ger_heer",							//Ifrit (HMG)
+	"fow_v_sdkfz_222_foliage_ger_heer",									//Ifrit (GMG)
+	"fow_v_sdkfz_250_9_camo_foliage_ger_heer",							//GMG
+	"LIB_SdKfz251",														//Ifrit (HMG)
+	"LIB_SdKfz251",														//Ifrit (HMG)
 	"fow_v_sdkfz_251_camo_foliage_ger_heer",							//Ifrit (HMG)
 	"fow_v_sdkfz_222_foliage_ger_heer",									//Ifrit (GMG)
 	"fow_v_sdkfz_250_9_camo_foliage_ger_heer",							//GMG
 	"LIB_FlakPanzerIV_Wirbelwind",									    //AA
+	"LIB_PzKpfwIV_H_tarn51c",											//Pz-4
 	"LIB_PzKpfwIV_H_tarn51c",											//Pz-4
 	"LIB_PzKpfwIV_H_tarn51c",											//Pz-4
 	"fow_v_panther_ger_heer",											//Panther
@@ -86,7 +93,7 @@ opfor_vehicles_low_intensity = [
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
 	"fow_v_sdkfz_250_camo_foliage_ger_heer",							//Ifrit (HMG)
-	"fow_v_sdkfz_250_camo_foliage_ger_heer",									//Ifrit (GMG)
+	"fow_v_sdkfz_250_camo_foliage_ger_heer",							//Ifrit (GMG)
 	"fow_v_sdkfz_222_camo_ger_heer",									//Ifrit (GMG)
 	"fow_v_sdkfz_234_1",											    //Qilin (AT)
 	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
@@ -95,7 +102,17 @@ opfor_battlegroup_vehicles = [
 	"LIB_OpelBlitz_Tent_Y_Camo",										//Tempest Transport (Covered)
 	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
 	"LIB_OpelBlitz_Tent_Y_Camo",										//Tempest Transport (Covered)
-	"LIB_FlakPanzerIV_Wirbelwind",										//ZSU-39 Tigris
+	"fow_v_sdkfz_250_camo_foliage_ger_heer",							//Ifrit (HMG)
+	"fow_v_sdkfz_250_camo_foliage_ger_heer",							//Ifrit (GMG)
+	"fow_v_sdkfz_222_camo_ger_heer",									//Ifrit (GMG)
+	"fow_v_sdkfz_234_1",											    //Qilin (AT)
+	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
+	"LIB_OpelBlitz_Tent_Y_Camo",										//Tempest Transport (Covered)
+	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
+	"LIB_OpelBlitz_Tent_Y_Camo",										//Tempest Transport (Covered)
+	"LIB_OpelBlitz_Open_Y_Camo",										//Tempest Transport
+	"LIB_OpelBlitz_Tent_Y_Camo",										//Tempest Transport (Covered)
+	"LIB_SdKfz_7_AA",													//ZSU-39 Tigris
 	"LIB_FlakPanzerIV_Wirbelwind",										//ZSU-39 Tigris
 	"LIB_PzKpfwIV_H_tarn51c",                                           //Extra Tank 
 	"LIB_PzKpfwIV_H_tarn51c",											//T-100 Varsuk
