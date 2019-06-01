@@ -1,4 +1,5 @@
 _troup_transport = _this select 0;
+_driver = driver _troup_transport;
 _transport_group = (group (driver _troup_transport));
 _start_pos = getpos _troup_transport;
 _dat_objective =  ([getpos _troup_transport] call F_getNearestBluforObjective) select 0;
@@ -6,9 +7,20 @@ _unload_distance = 500;
 sleep 1;
 _initial_crewcount = count crew _troup_transport;
 
-waitUntil { sleep 0.2; !(alive _troup_transport) || !(alive (driver _troup_transport)) || (((_troup_transport distance _dat_objective) < _unload_distance) && (!(surfaceIsWater (getpos _troup_transport)))) };
+while { ((getpos (leader _transport_group)) distance _start_pos) < 100 } do {
+	while {(count (waypoints _transport_group)) != 0} do {deleteWaypoint ((waypoints _transport_group) select 0);};
+    _transport_waypoint =  _transport_group addWaypoint [_dat_objective, 100];
+    _transport_waypoint setWaypointType "MOVE";
+    _transport_waypoint setWaypointSpeed "NORMAL";
+    _transport_waypoint setWaypointBehaviour "AWARE";
+    _transport_waypoint setWaypointCombatMode "YELLOW";
+    _transport_waypoint setWaypointCompletionRadius (_unload_distance - 50);
+    sleep 30;
+};
 
-if ((alive _troup_transport) && (alive (driver _troup_transport))) then {
+waitUntil { sleep 0.2; !(alive _troup_transport) || !(alive (_driver)) || (vehicle _driver == _driver) || (((_troup_transport distance _dat_objective) < _unload_distance) && (!(surfaceIsWater (getpos _troup_transport)))) };
+
+if ((alive _troup_transport) && (alive _driver) && (vehicle _driver != _driver) && ((_troup_transport distance _dat_objective) < (_unload_distance + 200))) then {
 	_troupgrp = createGroup [GRLIB_side_enemy, true];
 
 	while {(count (waypoints _troupgrp)) != 0} do {deleteWaypoint ((waypoints _troupgrp) select 0);};
@@ -47,20 +59,20 @@ if ((alive _troup_transport) && (alive (driver _troup_transport))) then {
 
 	while {(count (waypoints _transport_group)) != 0} do {deleteWaypoint ((waypoints _transport_group) select 0);};
 
-	_waypoint2 = _transport_group addWaypoint [_start_pos, 100];
-	_waypoint2 setWaypointType "MOVE";
-	_waypoint2 setWaypointSpeed "NORMAL";
-	_waypoint2 setWaypointCompletionRadius 30;
-
 	sleep 5;
 
 	[_troupgrp, true] spawn battlegroup_ai;
-
-    waitUntil {
-        sleep 1;
-        !(alive _troup_transport) || !(alive (driver _troup_transport)) || (_troup_transport distance _start_pos < 800) || (count (waypoints _transport_group)) == 0
-    };
-
-    { _troup_transport deleteVehicleCrew _x; } forEach crew _troup_transport;
-    deleteVehicle _troup_transport;
 };
+
+_waypoint2 = _transport_group addWaypoint [_start_pos, 100];
+_waypoint2 setWaypointType "MOVE";
+_waypoint2 setWaypointSpeed "NORMAL";
+_waypoint2 setWaypointCompletionRadius 30;
+
+waitUntil {
+    sleep 1;
+    !(alive _troup_transport) || !(alive (driver _troup_transport)) || (_troup_transport distance _start_pos < 800) || ((vehicle _driver) == _driver) || (surfaceIsWater (getpos _troup_transport)) || (count (crew _troup_transport)) == 0
+};
+
+deleteVehicle _driver;
+deleteVehicle _troup_transport;

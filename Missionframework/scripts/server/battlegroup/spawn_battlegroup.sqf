@@ -34,12 +34,13 @@ if ( _spawn_marker != "" ) then {
 	{
 		_nextgrp = createGroup [GRLIB_side_enemy, true];
 		_vehicle = [markerpos _spawn_marker, _x] call F_libSpawnVehicle;
-		sleep 0.5;
+		sleep 2;
 		(crew _vehicle) joinSilent _nextgrp;
-		[_nextgrp] spawn battlegroup_ai;
-		_bg_groups pushback _nextgrp;
 		if ( ( _x in opfor_troup_transports ) &&  ( [] call F_opforCap < GRLIB_battlegroup_cap ) ) then {
 			[_vehicle] spawn troup_transport;
+		} else {
+            [_nextgrp] spawn battlegroup_ai;
+            _bg_groups pushback _nextgrp;
 		};
 		last_battlegroup_size = last_battlegroup_size + 1;
 	} foreach _selected_opfor_battlegroup;
