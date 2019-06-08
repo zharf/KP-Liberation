@@ -121,7 +121,8 @@ GRLIB_arsenal_magazines = [
 	"fow_e_tnt_onepound_mag",
 	"fow_e_tnt_twohalfpound_mag",
 	"fow_e_tnt_twopound_mag",
-	"LIB_TMI_42_MINE_mag"
+	"LIB_TMI_42_MINE_mag",
+	"ACE_SpareBarrel"
 ];
 
 GRLIB_arsenal_items = [

@@ -73,7 +73,8 @@ GRLIB_arsenal_magazines = [
 	"LIB_RDG",
 	"fow_e_tnt_halfpound",
 	"fow_1Rnd_piat_HEAT",
-	"fow_1Rnd_piat_HE"
+	"fow_1Rnd_piat_HE",
+	"ACE_SpareBarrel"
 ];
 
 GRLIB_arsenal_items = [

@@ -148,7 +148,8 @@ GRLIB_arsenal_magazines = [
 	"murshun_cigs_lighter",
 	"murshun_cigs_cigpack",
 	"LIB_10Rnd_770x56_MkVIII",
-	"LIB_30Rnd_770x56_MKVIII"
+	"LIB_30Rnd_770x56_MKVIII",
+	"ACE_SpareBarrel"
 ];
 
 GRLIB_arsenal_items = [
