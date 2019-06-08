@@ -24,6 +24,7 @@ private _weapons = missionNamespace getVariable ("KP_liberation_guerilla_weapons
 private _uniforms = missionNamespace getVariable ("KP_liberation_guerilla_uniforms_" + str _tier);
 private _vests = missionNamespace getVariable ("KP_liberation_guerilla_vests_" + str _tier);
 private _headgear = missionNamespace getVariable ("KP_liberation_guerilla_headgear_" + str _tier);
+private _units = [];
 
 while {(count (units _grp) < _amount)} do {
 	private _unit = _grp createUnit [(selectRandom KP_liberation_guerilla_units), _pos, [], 5, "NONE"];
@@ -64,6 +65,11 @@ while {(count (units _grp) < _amount)} do {
 		_unit addItemToBackpack "fow_1Rnd_m6a1";
 		_unit addItemToBackpack "fow_1Rnd_m6a1";
 	};
+	_units pushBack _unit;
 };
 
-_grp
+// make sure units are of the correct side
+private _group = createGroup [GRLIB_side_resistance, true];
+_units joinSilent _group;
+
+_group
