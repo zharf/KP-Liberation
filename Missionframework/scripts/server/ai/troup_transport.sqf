@@ -71,8 +71,10 @@ _waypoint2 setWaypointCompletionRadius 30;
 
 waitUntil {
     sleep 1;
-    !(alive _troup_transport) || !(alive (driver _troup_transport)) || (_troup_transport distance _start_pos < 800) || ((vehicle _driver) == _driver) || (surfaceIsWater (getpos _troup_transport)) || (count (crew _troup_transport)) == 0
+    !(alive _troup_transport) || !(alive _driver) || (_troup_transport distance _start_pos < 800) || ((vehicle _driver) == _driver) || (surfaceIsWater (getpos _troup_transport)) || (count (crew _troup_transport)) == 0
 };
 
-deleteVehicle _driver;
-deleteVehicle _troup_transport;
+if (alive _troup_transport && (alive _driver)) then {
+    deleteVehicle _driver;
+    deleteVehicle _troup_transport;
+};
