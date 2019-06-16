@@ -27,7 +27,7 @@ opfor_paratrooper = "LIB_SOV_VDV_soldier_00v00pRdvSvt40";				//Paratrooper
 
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "LIB_Willys_MB";											//Ifrit
-opfor_mrap_armed = "LIB_SdKfz251_captured";							    //Ifrit (HMG)
+opfor_mrap_armed = "LIB_SOV_M3_Halftrack";							    //Ifrit (HMG)
 //opfor_transport_helo = "O_Heli_Transport_04_bench_F";					//Mi-290 Taru (Bench)
 opfor_transport_truck = "LIB_US6_Tent";							        //Tempest Transport (Covered)
 opfor_ammobox_transport = "LIB_Zis5v";						            //Tempest Transport (Open) -> Has to be able to transport resource crates!
@@ -61,12 +61,20 @@ militia_vehicles = [
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 opfor_vehicles = [
-	"LIB_SdKfz251_captured",											//Ifrit (HMG)
-	"LIB_SdKfz251_captured",											//Ifrit (HMG)
+	"LIB_SOV_M3_Halftrack",												//Ifrit (HMG)
+	"LIB_SOV_M3_Halftrack",												//Ifrit (HMG)
+	"LIB_Scout_M3",													    //Ifrit (GMG)
+	"LIB_SOV_M3_Halftrack",												//Ifrit (HMG)
+	"LIB_SOV_M3_Halftrack",												//Ifrit (HMG)
+	"LIB_Scout_M3",													    //Ifrit (GMG)
+	"LIB_SOV_M3_Halftrack",												//Ifrit (HMG)
+	"LIB_SOV_M3_Halftrack",												//Ifrit (HMG)
 	"LIB_Scout_M3",													    //Ifrit (GMG)
 	"LIB_Zis5v_61K",											        //Soviet AA
 	"LIB_Zis5v_61K",											        //Soviet AA
 	"LIB_T34_76",												        //T-100 Varsuk
+	"LIB_T34_85",												        //T-100 Varsuk
+	"LIB_T34_85",												        //T-100 Varsuk
 	"LIB_T34_85",												        //T-100 Varsuk
 	"LIB_T34_85",												        //T-100 Varsuk
 	"LIB_SU85",												            //T-140 Angara
@@ -76,7 +84,7 @@ opfor_vehicles = [
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
 	"LIB_Scout_M3",													    //Ifrit (HMG)
-	"LIB_SdKfz251_captured",											//Ifrit (HMG)
+	"LIB_SOV_M3_Halftrack",												//Ifrit (HMG)
 	"LIB_Zis5v_61K",													//AA Truck
 	"LIB_T34_76"											            //MSE-3 Marid
 ];
@@ -86,27 +94,42 @@ opfor_battlegroup_vehicles = [
 	"LIB_Scout_M3",													    //Ifrit (HMG)
 	"LIB_Scout_M3",													    //Ifrit (GMG)
 	"LIB_Zis5v_61K",													//Ifrit (GMG)
-	"LIB_SdKfz251_captured",											//Qilin (AT)
-	"LIB_US6_Open",											            //Tempest Transport
+	"LIB_SOV_M3_Halftrack",												//Qilin (AT)
+	"LIB_Scout_M3",													    //Ifrit (HMG)
+	"LIB_Scout_M3",													    //Ifrit (GMG)
+	"LIB_Zis5v_61K",													//Ifrit (GMG)
+	"LIB_SOV_M3_Halftrack",												//Qilin (AT)
+	"LIB_Zis5v",											            //Tempest Transport
 	"LIB_US6_Tent",												        //Tempest Transport (Covered)
-	"LIB_Zis5v_61K",											        //ZSU-39 Tigris
-	"LIB_SdKfz251_captured",											//ZSU-39 Tigris
+	"LIB_Zis5v",											            //Tempest Transport
+	"LIB_US6_Tent",												        //Tempest Transport (Covered)
+	"LIB_Zis5v",											            //Tempest Transport
+	"LIB_US6_Tent",												        //Tempest Transport (Covered)
+	"LIB_Zis5v",											            //Tempest Transport
+	"LIB_US6_Tent",												        //Tempest Transport (Covered)
+	"LIB_Zis5v",											            //Tempest Transport
+	"LIB_US6_Tent",												        //Tempest Transport (Covered)
+	"LIB_Zis5v",											            //Tempest Transport
+	"LIB_US6_Tent",												        //Tempest Transport (Covered)
+	"LIB_SOV_M3_Halftrack",												//ZSU-39 Tigris
 	"LIB_T34_76",                                                       //Extra Tank (older t34)
 	"LIB_T34_85",												        //T-100 Varsuk
 	"LIB_T34_85",												        //T-100 Varsuk
+	"LIB_T34_85",												        //T-100 Varsuk
+	"LIB_T34_85",												        //T-100 Varsuk
 	"LIB_SU85",												            //T-140 Angara
-	"LIB_JS2_43",												        //T-140K Angara
-	"LIB_US6_Tent",									                    //Po-30 Orca (Armed)
-	"LIB_SdKfz251_captured"									            //Po-30 Orca (Armed)
+	"LIB_JS2_43"												        //T-140K Angara
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
 	"LIB_Scout_M3",													    //Ifrit (HMG)
-	"LIB_US6_Open",													    //Ifrit (HMG)
+	"LIB_Zis5v",											            //Tempest Transport
+	"LIB_US6_Open",											            //Tempest Transport
+	"LIB_Zis5v",											            //Tempest Transport
 	"LIB_US6_Open",											            //Tempest Transport
 	"LIB_T34_76",											            //MSE-3 Marid
-	"LIB_SdKfz251_captured",										    //BTR-K Kamysh
+	"LIB_SOV_M3_Halftrack",										    	//BTR-K Kamysh
 	"LIB_Zis5v_61K",											        //ZSU-39 Tigris
 	"LIB_T34_85"									                    //Mi-48 Kajman
 ];
@@ -116,21 +139,24 @@ If something in this array can't hold all 8 soldiers then buggy behaviours may o
 opfor_troup_transports = [
 	"LIB_US6_Open",											           //Tempest Transport
 	"LIB_US6_Tent",												       //Tempest Transport (Covered)
-	"LIB_SdKfz251_captured",										       //MSE-3 Marid
+	"LIB_SOV_M3_Halftrack",										       //MSE-3 Marid
+	"LIB_Zis5v",											           //Tempest Transport
 	"LIB_Li2"
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
-	"lib_la5_green",
+	"sab_la5",
 	"LIB_Li2"
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-	"lib_il2_geist_camo_1",									           //To-199 Neophron (CAS)
-	"lib_la5_green",												   //To-201 Shikra
-	"LIB_Pe2",                                                         //To-201 Shikra
-	"lib_i16_camo",                                                    //To-201 Shikra
-	"LIB_RA_P39_2"                                                     //To-201 Shikra
+	"sab_il2",									        //To-199 Neophron (CAS)
+	"sab_la5",											//To-201 Shikra
+	"LIB_Pe2",                                          //To-201 Shikra
+	"sab_i16",                                         	//To-201 Shikra
+	"sab_p39",                                          //To-201 Shikra
+	"sab_la5_2",
+	"sab_tusb2"
 ];
