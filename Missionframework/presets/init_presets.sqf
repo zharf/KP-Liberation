@@ -58,10 +58,10 @@ switch (KP_liberation_preset_civilians) do {
 
 // Prices for the blufor infantry squads (supplies, ammo, fuel)
 squads = [
-	[blufor_squad_inf_light,200,0,0],
-	[blufor_squad_inf,300,0,0],
-	[blufor_squad_at,200,250,0],
-	[blufor_squad_recon,250,0,0],
+	[blufor_squad_inf_light,100,0,0],
+	[blufor_squad_inf,200,0,0],
+	[blufor_squad_at,200,50,0],
+	[blufor_squad_recon,150,0,0],
 	[blufor_squad_para,200,0,0]
 ];
 
