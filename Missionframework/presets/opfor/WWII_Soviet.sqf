@@ -130,8 +130,7 @@ opfor_battlegroup_vehicles_low_intensity = [
 	"LIB_US6_Open",											            //Tempest Transport
 	"LIB_T34_76",											            //MSE-3 Marid
 	"LIB_SOV_M3_Halftrack",										    	//BTR-K Kamysh
-	"LIB_Zis5v_61K",											        //ZSU-39 Tigris
-	"LIB_T34_85"									                    //Mi-48 Kajman
+	"LIB_Zis5v_61K"											        	//ZSU-39 Tigris
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
