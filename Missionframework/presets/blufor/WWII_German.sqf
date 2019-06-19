@@ -88,7 +88,7 @@ heavy_vehicles = [
 	["LIB_GER_PzKpfwV_Tarn",600,500,600],                                   //Panther
 	["fow_v_panther_camo_ger_heer",600,500,600],                            //Panther
 	["LIB_GER_PzKpfwVI_E_sPA503_Tarn",700,500,750],                         //Tiger I
-	["LIB_GER_PzKpfwVI_B_sPA505_Tarn",900,600,800]                          //Tiger II
+	["LIB_GER_PzKpfwVI_B_sPA505_Tarn",1000,800,1000]                          //Tiger II
 ];
 
 air_vehicles = [
