@@ -29,6 +29,7 @@ GRLIB_arsenal_weapons = [
 	"LIB_LeeEnfield_No1_Bayonet",
 	"LIB_LeeEnfield_No1_CUP",
 	"LIB_LeeEnfield_No4",
+	"LIB_LeeEnfield_No4_Scoped",
 	"LIB_LeeEnfield_No4_Scoped_CUP",
 	"LIB_LeeEnfield_No4_Bayonet",
 	"LIB_LeeEnfield_No4_CUP",
