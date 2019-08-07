@@ -17313,17 +17313,17 @@ class Mission
 {
 	class Intel
 	{
-		resistanceWest=0;
+		briefingName="@STR_MISSION_TITLE";
+		overviewText="@STR_MISSION_DESCRIPTION";
+		resistanceEast=1;
 		timeOfChanges=1800.0002;
-		startWeather=0;
+		startWeather=0.40000001;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0;
+		forecastWeather=0.40000001;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		wavesForced=1;
-		windForced=1;
 		year=2035;
 		month=7;
 		day=14;
