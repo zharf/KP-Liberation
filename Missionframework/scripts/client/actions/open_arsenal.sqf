@@ -25,8 +25,6 @@ if (KP_liberation_ace && KP_liberation_arsenal_type) then {
 	};
 };
 
-// TODO workaround for players being able to access unwanted items because I disabled the forbidden items thing
-_loadouts_data = [];
 waitUntil { dialog };
 
 if ( count _loadouts_data > 0 ) then {
