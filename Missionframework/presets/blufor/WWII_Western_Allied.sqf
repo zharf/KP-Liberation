@@ -31,6 +31,7 @@ KP_liberation_plane_slot_building = "Land_fow_fort_rampart";				// The hangar us
 KP_liberation_supply_crate = "CargoNet_01_box_F";						// This defines the supply crates, as in resources.																						Default is "CargoNet_01_box_F".
 KP_liberation_ammo_crate = "B_CargoNet_01_ammo_F";						// This defines the ammunition crates.																									Default is "B_CargoNet_01_ammo_F".
 KP_liberation_fuel_crate = "CargoNet_01_barrels_F";						// This defines the fuel crates.																										Default is "CargoNet_01_barrels_F".
+KP_liberation_potato_name = "Queen 01";
 
 /* - Friendly classnames.
 Each array below represents one of the 7 pages within the build menu.
