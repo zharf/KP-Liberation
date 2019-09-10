@@ -112,7 +112,7 @@ class Params
         title = $STR_PARAMS_ARSENAL;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_ARSENAL_BI, $STR_PARAMS_ARSENAL_ACE};
-        default = 0;
+        default = 1;
     };
     class VictoryCondition {
         title = $STR_PARAMS_VICTORYCONDITION;
