@@ -258,6 +258,18 @@ class Params
         texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
         default = 0;
     };
+    class AllowEnemiesInImmobile {
+        title = $STR_PARAM_ALLOW_ENEMIES_IN_IMMOBILE;
+        values[] = {0, 25, 50, 75, 100};
+        text[] = { $STR_PARAMS_DISABLED, "25%", "50%", "75%", "100%"};
+        default = 50;
+    };
+    class DelayDespawnMax {
+        title = $STR_PARAM_DELAY_DESPAWN_MAX;
+        values[] = {0, 5, 10, 15, 20, 25, 30};
+        texts[] = {$STR_PARAMS_DISABLED, "5", "10", "15", "20", "25", "30"};
+        default = 5;
+    };
     class LimitedZeus {
         title = $STR_PARAM_LIMITEDZEUS;
         values[] = {1,0};
